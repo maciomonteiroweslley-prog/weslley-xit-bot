@@ -69,4 +69,5 @@ client.on('interactionCreate', async interaction => {
   });
 });
 
-module.exports = { client };
+const token = process.env.DISCORD_TOKEN;
+client.login(token);
